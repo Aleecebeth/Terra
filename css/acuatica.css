@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*caja principal de toda la pagina*/
+#cajota{
+    background-color: rgb(23, 72, 117);
+    width: 100%;
+    height: 100%;
+}
+#prin-box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+/*menu de navegacion*/
+.navbar{
+    background-color: #366bb1;
+    color: aliceblue;
+    font-size: 120%;
+}
+/*css de las imagenes tipo slider*/
+#section-img{
+    display: flex;
+    width: 100%;
+    height: 430px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+#section-img img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border-radius: 8px;
+}
+#section-img img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(50%);
+}
+/*Caja que contiene a todas las cajitas*/
+#padre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around; 
+    
+ }
+/*css de las cajas de informacion*/
+.boxx{
+    border-radius: 20px;
+    margin-bottom: 7px;
+    background-color: #5b96ce;
+    padding: 2%;
+    width: 40%;
+    text-align: center;
+}
+.boxx p{
+    font-size: 120%;
+}
+.boxx-imgs{
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+}
+
+/* css del footer */
+#pie{
+background-color: #366bb1 ;
+color: aliceblue;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+box-shadow: 0 10px 0  rgba(0, 0, 0, .2);
+}
+#pie p{
+    margin-top: 23px;
+}
+#ig{
+    height: 25px;
+    width: 25px;
+}
+#x{
+    height: 27px;
+    width: 29px;
+
+}
+i {
+    font-size: 25px;
+    }
+    @media screen and (max-width:600px) {
+        .boxx{
+            border-radius: 20px;
+            margin-bottom: 7px;
+            background-color: #5b96ce;
+            padding: 2%;
+            width: 70%;
+            text-align: center;
+        }
+        .nav-item{
+            padding-left: 20px;
+        }
+        #pie{
+            background-color: #366bb1 ;
+            color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 10px;
+            box-shadow: 0 10px 0  rgba(0, 0, 0, .2);
+            }
+            #pie p{
+                margin-top: 14px;
+            }
+            #ig{
+                height: 15px;
+                width: 15px;
+            }
+            #x{
+                height: 14px;
+                width: 17px;
+            
+            }
+    
+    
+    }
